@@ -3,7 +3,7 @@ lines = file.readlines()
 print(lines)
 
 
-a = open("input.txt","r+")
+a = open("input.txt","a+")
 b = a.readlines()
 c =len(b)
 for n in (0,c):
