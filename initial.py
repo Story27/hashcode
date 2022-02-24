@@ -17,17 +17,16 @@ f = req2.get("C++")
 g = req2.get("HTML")
 h = req3.get("HTML")
 i = req3.get("Python")
-diction = {}
-diction['3'] = 'three projects are planned'
-diction['Logging'] = 'assignments for project Logging'
+diction = []
+diction.append(3)
+diction.append('Logging')
 if a>b or a==b:
-    diction['anna'] = 'Anna → first role'
-
-diction['WebServer'] = 'assignments for project WebServer'
+    diction.append('anna')
+diction.append('WebServer')
 if (d>g or d==g) and (b>f or b==f):
-    diction['Bob Anna'] = 'Bob → first role, Anna → second role'
-
-diction['WebChat'] = 'assignments for project WebChat'
+    diction.append('Bob Anna')
+diction.append('WebChat')
 if (d>h or d==h) and (e>i or e==i):
-    diction['Maria Bob'] = 'Maria → first role, Bob → second role'
-print(diction)
+    diction.append('Maria Bob')
+
+print(*diction, sep = '\n')
