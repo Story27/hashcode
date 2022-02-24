@@ -1,3 +1,3 @@
-file = open("input1.txt")
+file = open("initial.txt")
 lines = file.readlines()
 print(lines)
